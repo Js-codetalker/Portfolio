@@ -10,15 +10,15 @@
 </head>
 <body>
 <header>
-	<nav class="flex-container">
-		<a href="#" class="flex-item">About</a>
-		<a href="#" class="flex-item">Skillset</a>
-		<a href="#" class="flex-item">Portfolio</a>
-		<a href="#" class="flex-item">Contact</a>
+	<nav>
+		<a href="#About"><p>About</p><div class="gradient"></div></a>
+		<a href="#Skills"><p>Skillset</p><div class="gradient"></div></a>
+		<a href="#Portfolio"><p>Portfolio</p><div class="gradient"></div></a>
+		<a href="#Contact"><p>Contact</p><div class="gradient"></div></a>
 	</nav>
 </header>
 
-<h2>Hi! I'm Julio Salas</h2>
+<h2 id="About">Hi! I'm Julio Salas</h2>
 <div class="grid-conteiner">	
 		<p class="grid-item"><strong></strong></p>
 		<p class="grid-item"><strong></strong></p>
@@ -26,7 +26,7 @@
 		<img src="#">
 </div>
 
-<h2>I'm good in</h2>
+<h2 id="Skills">I'm good in</h2>
 <div class="flex-container">
 		<div class="flex-item">
 			<img src="#">
@@ -54,7 +54,7 @@
 		</div>
 </div>
 
-<h1>Portfolio</h1>
+<h1 id="Portfolio">Portfolio</h1>
 <div class="grid-conteiner">
 		<div class="grid-item">
 			<img src="#">
@@ -88,7 +88,7 @@
 		</div>
 </div>
 
-<h2>Contact</h2>
+<h2 id="Contact">Contact</h2>
 <form class="grid-conteiner">
 	<p>Name</p>
 	<input class="grid-item" type="text" name="">

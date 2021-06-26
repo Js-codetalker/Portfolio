@@ -8,4 +8,39 @@
 * {
 	color: var(--letters);
 	background-color: var(--background);
+	text-decoration: none;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	height: 57px;
+	background-color: var(--background);
+	top: 0;
+}
+
+nav {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: flex-end;
+}
+
+nav > a {
+	height: 100%;
+	width: 100px;
+}
+
+.gradient {
+	width: 100%;
+	height: 5px;
+	background: var(--gradient-blue);
+}
+
+a > p {
+	text-align: center;
+}
+
+a:hover > .gradient {
+	background: var(--gradient-orange);
 }
