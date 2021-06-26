@@ -7,40 +7,49 @@
 
 * {
 	color: var(--letters);
-	background-color: var(--background);
 	text-decoration: none;
 }
-
+body {
+	background-image: url(Images/25-best-hd-wallpapers-laptops159561982840438.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: contain;
+	padding: 0;
+	margin: 0;
+}
+/*Start of the nav */
 header {
 	position: fixed;
 	width: 100%;
 	height: 57px;
 	background-color: var(--background);
 	top: 0;
+	z-index: 20;
 }
-
 nav {
 	display: flex;
 	width: 100%;
 	height: 100%;
 	justify-content: flex-end;
 }
-
 nav > a {
 	height: 100%;
 	width: 100px;
 }
-
 .gradient {
 	width: 100%;
 	height: 5px;
 	background: var(--gradient-blue);
 }
-
 a > p {
 	text-align: center;
 }
-
 a:hover > .gradient {
 	background: var(--gradient-orange);
+}
+/*End of the nav*/
+
+.container {
+	position: relative;
+	top: 800px;
 }
