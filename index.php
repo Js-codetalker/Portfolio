@@ -20,9 +20,9 @@
 
 <h2 id="About">Hi! I'm Julio Salas</h2>
 <div class="grid-conteiner">	
-		<p class="grid-item"><strong></strong></p>
-		<p class="grid-item"><strong></strong></p>
-		<p class="grid-item"><strong></strong></p>
+		<p class="grid-item">the "nerd" behind this website, and <strong>the person you've looking for</strong> carry out your proyect.</p>
+		<p class="grid-item">I'm a web designer from Venezuela, but actually based on Colombia. I like reading, coding and <strong>solve problems.</strong></p>
+		<p class="grid-item">But of course, you want proofs rather than words, so keep scrolling and <strong>see what I can do for you.</strong></p>
 		<img src="#">
 </div>
 
