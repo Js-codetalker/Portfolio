@@ -1,8 +1,11 @@
 :root {
 	--letters:  rgba(245,255,255);
-	--background: rgba(0,0,25);
-	--gradient-blue1: rgba(0,214,255);
-	--gradient-blue2: rgba(0,133,255);
-	--gradient-orange1: rgba(255,210,0);
-	--gradient-orange2:  rgba(255,119,0);
+	--background: rgba(0,0,20);
+	--gradient-blue: linear-gradient(0,rgba(0,214,255), rgba(0,214,255,0.85),rgba(0,214,255,0.6),rgba(0,214,255,0.5),rgba(0,214,255,0.35),rgba(0,214,255,0.1));
+	--gradient-orange: linear-gradient(0,rgba(255,119,0), rgba(255,119,0,0.85),rgba(255,119,0,0.6),rgba(255,119,0,0.5),rgba(255,119,0,0.35),rgba(255,119,0,0.1));
+}
+
+* {
+	color: var(--letters);
+	background-color: var(--background);
 }
