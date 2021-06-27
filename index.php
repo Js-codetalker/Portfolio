@@ -46,7 +46,7 @@
 				<h3>Titulo</h3>
 			</div>
 			<div class="skills_slot">
-				<img id="img5" class="skills_slot_icon" src="Images/php2.png">
+				<!--<img id="img5" class="skills_slot_icon" src="Images/php2.png">-->
 				<h3>Titulo</h3>
 			</div>
 			<div class="skills_slot">
@@ -62,8 +62,14 @@
 	
 
 	<h1 id="Portfolio">Portfolio</h1>
-	<div class="grid-conteiner">
-			<div class="grid-item">
+	<div class="portfolio">
+			<div class="portfolio-item">
+				<h3>Title</h3>
+				<img src="#">
+				<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</blockquote>
+				<div></div>
+			</div>
+			<!--<div class="grid-item">
 				<img src="#">
 				<h3></h3>
 				<div>inline</div>
@@ -87,22 +93,23 @@
 				<img src="#">
 				<h3></h3>
 				<div>inline</div>
-			</div>
-			<div class="grid-item">
-				<img src="#">
-				<h3></h3>
-				<div>inline</div>
-			</div>
+			</div>-->
 	</div>
 
 	<h2 id="Contact">Contact</h2>
-	<form class="grid-conteiner">
-		<p>Name</p>
-		<input class="grid-item" type="text" name="">
-		<p>Asunto</p>
-		<input class="grid-item" type="text" name="">
-		<p>Message</p>
-		<input class="grid-item" type="text" name="">
+	<form>
+		<div class="form-input">
+			<input type="text" name="email">
+		</div>
+		<div class="form-input">
+			<input type="text" name="asunto">
+		</div>
+		<div class="form-input">
+			<input type="text" name="message">
+		</div>
+		<div class="form-input">
+			<input type="submit">
+		</div>
 	</form>
 
 	<div class="grid-conteiner">

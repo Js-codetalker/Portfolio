@@ -9,6 +9,7 @@
 	color: var(--letters);
 	text-decoration: none;
 	font-family: "Montserrat";
+	box-sizing: border-box;
 }
 body {
 	background-image: url(Images/25-best-hd-wallpapers-laptops159561982840438.jpg);
@@ -56,7 +57,7 @@ a:hover {
 	background-color: rgba(0, 0, 30, 1.0);
 }
 /*End of the nav*/
-
+/*Start of skillset*/
 .container {
 	background-color: var(--background);
 	width: 100%;
@@ -79,10 +80,8 @@ a:hover {
 
 .skills_slot {
 	height: 200px;
-	width: 200px;
+	width: 200px; 
 	margin: 10px;
-	/*background-color: rgba(0, 0, 30, 1.0);*/
-
 }
 
 .skills_slot_icon {
@@ -134,3 +133,87 @@ div > img {
 h1 {
 	text-align: center;
 }
+/*End of skillset*/
+/*Start of portfolio*/
+.portfolio {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.portfolio-item {
+	width: 600px;
+	height: 400px;
+	align-self: center;
+}
+
+.portfolio-item > div {
+	width: 80%;
+	height: 5px;
+	position: relative;
+	left: 10%;
+	background: var(--gradient-blue);
+}
+
+.portfolio-item:hover > div {
+	background: var(--gradient-orange);
+	width: 90%;
+	left: 5%;
+}
+/*End of portfolio*/
+/*Start of contact*/
+form {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(100px, 200px));
+	grid-template-rows: repeat(4, 100px);
+	justify-content: center;
+}
+.form-input {
+	display: flex;
+	justify-content: center;
+}
+.form-input > input {
+	position: relative;
+	top: 60px;
+	height: 35px;
+	width: 88%;
+}
+.form-input:first-child > input {
+	left: 4%;
+}
+.form-input:nth-child(2) > input {
+	right: 4%;
+}
+.form-input:nth-child(3) > input {
+	width: 90%;
+	height: 90%;
+	top: 5%;
+}
+.form-input:first-child {
+	grid-column: 1 / 3;
+}
+.form-input:nth-child(2) {
+	grid-column: 3 / 5;
+}
+
+.form-input:nth-child(3) {
+	grid-column: 1 / 5;
+	grid-row: 2 / 4;
+}
+.form-input:last-child {
+	grid-column: 2 / 4;
+	grid-row: 4 / 5;
+}
+input[type = "submit"] {
+	top: 0;
+	width: 50%;
+	height: 50%;
+	padding: 17px;
+}
+input {
+	border: none;
+	outline: none;
+	background-color: 
+}
+/*End of contact*/
+
