@@ -8,14 +8,19 @@
 * {
 	color: var(--letters);
 	text-decoration: none;
+	font-family: "Montserrat";
 }
 body {
 	background-image: url(Images/25-best-hd-wallpapers-laptops159561982840438.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: contain;
+	background-size: cover;
 	padding: 0;
 	margin: 0;
+}
+h2 {
+	display: block;
+	text-align: center;
 }
 /*Start of the nav */
 header {
@@ -47,9 +52,85 @@ a > p {
 a:hover > .gradient {
 	background: var(--gradient-orange);
 }
+a:hover {
+	background-color: rgba(0, 0, 30, 1.0);
+}
 /*End of the nav*/
 
 .container {
+	background-color: var(--background);
+	width: 100%;
+	padding: 10px;
+}
+
+.content {
 	position: relative;
 	top: 800px;
+	background-color: var(--background);
+}
+
+.skills {
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.skills_slot {
+	height: 200px;
+	width: 200px;
+	margin: 10px;
+	/*background-color: rgba(0, 0, 30, 1.0);*/
+
+}
+
+.skills_slot_icon {
+	filter: grayscale(100%);
+}
+
+h3 {
+	text-align: center;
+}
+
+div > img {
+	position: relative;
+}
+
+#h3-1 {
+	position: relative;
+	top: -20px;
+}
+
+#h3-2 {
+	position: relative;
+	top: 20px;
+	left: 3px;
+}
+
+#img1 {
+	left: 13px;
+	top: -10px;
+}
+
+#img2 {
+	left: 24px;
+}
+
+#img3 {
+	left: 24px;
+}
+
+#img4 {
+	left: 25px;
+	top: 10px;
+}
+
+#img6 {
+	left: 39px;
+	top: 18px;
+}
+
+h1 {
+	text-align: center;
 }
