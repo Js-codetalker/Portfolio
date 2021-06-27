@@ -31,27 +31,27 @@
 		<div class="skills">
 			<div class="skills_slot">
 				<img id="img1" class="skills_slot_icon" src="Images/html.png">
-				<h3 id="h3-1">Titulo</h3>
+				<h3 id="h3-1">HTML5</h3> 
 			</div>
 			<div class="skills_slot">
 				<img id="img2" class="skills_slot_icon" src="Images/css.png">
-				<h3>Titulo</h3>
+				<h3>CSS3</h3>
 			</div>
 			<div class="skills_slot">
 				<img id="img3"class="skills_slot_icon" src="Images/js.png">
-				<h3>Titulo</h3>
+				<h3>Javascript</h3>
 			</div>
 			<div class="skills_slot">
 				<img id="img4" class="skills_slot_icon" src="Images/mysql.png">
-				<h3>Titulo</h3>
+				<h3>MySQL</h3>
 			</div>
 			<div class="skills_slot">
 				<!--<img id="img5" class="skills_slot_icon" src="Images/php2.png">-->
-				<h3>Titulo</h3>
+				<h3>PHP</h3>
 			</div>
 			<div class="skills_slot">
 				<img id="img6" class="skills_slot_icon" src="Images/wordpress.png">
-				<h3 id="h3-2">Titulo</h3>
+				<h3 id="h3-2">WordPress</h3>
 			</div>
 		</div>
 	</div>	
@@ -99,13 +99,13 @@
 	<h2 id="Contact">Contact</h2>
 	<form>
 		<div class="form-input">
-			<input type="text" name="email">
+			<input type="email" name="email" placeholder="Write your email" required="true">
 		</div>
 		<div class="form-input">
-			<input type="text" name="asunto">
+			<input type="text" name="asunto" placeholder="Write the subject" required="true">
 		</div>
 		<div class="form-input">
-			<input type="text" name="message">
+			<input type="text" name="message" placeholder="Write your message" required="true">
 		</div>
 		<div class="form-input">
 			<input type="submit">
@@ -113,19 +113,18 @@
 	</form>
 
 	<div class="grid-conteiner">
-		<div class="grid-item">
-			<img src="#">
-			<h3>Title</h3>
-		</div>
-		<div class="grid-item">
-			<img src="#">
-			<h3>Title</h3>
-		</div>
-		<div class="grid-item">
-			<img src="#">
-			<h3>Title</h3>
-		</div>
-	</div>
+			<a href="https://www.linkedin.com/in/julio-salas-b10605200/">
+				<img src="#">
+				<h3>LinkedIn</h3>
+			</a>
+			<a href="https://github.com/Js-codetalker">
+				<img src="#">
+				<h3>Github</h3>
+			</a>
+			<a href="https://www.linkedin.com/in/julio-salas-b10605200/">
+				<img src="#">
+				<h3>Title</h3>
+			</a>
 </div>
 </body>
 </html>
