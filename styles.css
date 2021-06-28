@@ -347,8 +347,32 @@ i:hover {
 
 .popup__description {
 	width: 493px;
-	height: 100px;
+	height: 00px;
 	background: var(--letters);
 	position: relative;
-	top: -80px;
 }
+/*End of popup*/
+/*Start of social media*/
+.socialMedia {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.socialMedia__slot {
+	text-align: center;
+	margin: 10px;
+	width: 150px;
+	padding: 10px;
+}
+.socialMedia__slot:hover{
+	background: rgba(0, 0, 0,.35);
+	border-radius: 5px;
+}
+.socialMedia__slot > img {
+	width: 100px;
+	height: 100px;
+	object-fit: contain;
+}
+/*End of social media*/

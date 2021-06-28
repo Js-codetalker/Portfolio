@@ -88,19 +88,15 @@
 				<input type="submit" value="Send!">
 			</div>
 		</form>
-		<div class="grid-conteiner">
-				<a href="https://www.linkedin.com/in/julio-salas-b10605200/">
-					<img src="#" alt="linkedin-icon">
-					<h3>LinkedIn</h3>
+		<div class="socialMedia">
+				<a class="socialMedia__slot" href="https://www.linkedin.com/in/julio-salas-b10605200/">
+					<img src="Images/linkedin.png" alt="linkedin-icon">
+					<p>Message me on</p>
 				</a>
-				<a href="https://github.com/Js-codetalker">
-					<img src="#" alt="Github-icon">
-					<h3>Github</h3>
+				<a class="socialMedia__slot" href="https://github.com/Js-codetalker">
+					<img src="Images/github.png" alt="Github-icon">
+					<p>Follow me on</p>
 				</a>
-			<a href="https://www.linkedin.com/in/julio-salas-b10605200/">
-				<img src="#" alt="#">
-				<h3>Title</h3>
-			</a>
 		</div>
 </div>
 	<!--Popup-->
