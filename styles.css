@@ -1,3 +1,4 @@
+/*General settings*/
 :root {
 	--letters:  rgba(245,255,255);
 	--background: rgba(0,0,20);
@@ -12,7 +13,7 @@
 	box-sizing: border-box;
 }
 body {
-	background-image: url(Images/25-best-hd-wallpapers-laptops159561982840438.jpg);
+	background-image: url(Images/background.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -27,6 +28,14 @@ h2 {
 	display: block;
 	text-align: center;
 }
+
+.blur-filter {
+	position: relative;
+	top: 400px;
+	backdrop-filter: blur(8px);
+
+}
+/*General settings*/
 /*Start of the nav */
 header {
 	position: fixed;
@@ -66,14 +75,6 @@ a:hover {
 	width: 100%;
 	padding: 20px;
 }
-
-.content {
-	position: relative;
-	top: 800px;
-	backdrop-filter: blur(8px);
-
-}
-
 .skills {
 	display: flex;
 	justify-content: center;
@@ -87,7 +88,11 @@ a:hover {
 .skills_slot {
 	height: 200px;
 	width: 200px;
-	margin: 20px;
+	margin: 10px;
+}
+.skills_slot:hover {
+	background-color: rgba(0, 0, 25, .2);
+	border-radius: 5px;
 }
 
 h3 {
@@ -132,35 +137,73 @@ div > img {
 	top: 18px;
 }
 
+
+/*End of skillset*/
+/*Start of portfolio*/
 h1 {
 	text-align: center;
 }
-/*End of skillset*/
-/*Start of portfolio*/
 .portfolio {
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 	justify-content: center;
 }
 
 .portfolio-item {
 	width: 600px;
-	height: 400px;
+	height: 500px;
 	align-self: center;
+	position: relative;
 }
-
-.portfolio-item > div {
+.portfolio-item:hover {
+	background-color: rgba(0, 0, 25, .2);
+	border-radius: 5px;
+}
+.portfolio-item-gradient {
 	width: 80%;
 	height: 5px;
 	position: relative;
 	left: 10%;
 	background: var(--gradient-blue);
 }
-
-.portfolio-item:hover > div {
+.portfolio__item-viewMore {
+	height: 288px;
+	width: 540px;
+	margin-right: 30px;
+	margin-left: 30px;
+	background: rgba(0, 0, 0,.5);
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	position: absolute;
+	top: 57px;
+}
+.portfolio__item-viewMore > p {
+	font-size: 30px;
+	font-weight: 600;
+}
+.portfolio-item:hover > .portfolio-item-gradient {
 	background: var(--gradient-orange);
 	width: 90%;
 	left: 5%;
+}
+.portfolio-item > h3 {
+	font-family: "Baskerville";
+	font-size: 2em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.portfolio-item > p {
+	text-align: center;
+}
+.portfolio-item > img {
+	height: 288px;
+	width: 540px;
+	margin-right: 30px;
+	margin-left: 30px;
+	object-fit: cover;
 }
 /*End of portfolio*/
 /*Start of contact*/
@@ -226,8 +269,86 @@ input[type = "submit"] {
 	background-color: rgba(0,214,255);
 }
 input[type = "submit"]:hover {
-	background-color: rgba(255,119,0,0.85);
-	border-bottom: 3px solid rgba(255,119,0,0.85);
+	background-color: rgba(0,190,0,0.85);
+	border-bottom: 3px solid rgba(0,119,0,0.85);
 }
 /*End of contact*/
+.overlay {
+	background: rgba(0, 0, 0, .35);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
+}
+.overlay.active{
+	visibility: visible;
+}
+.popup {
+	height: 488px;
+	width: 740px;
+	background: var(--background);
+	opacity: 0;
+	transform: scale(0.5);
+	transition: .5s ease all
+}
+.popup.active{
+	opacity: 1;
+	transform: scale(1);
+}
+.popup-mainImg {
+	width: 740px;
+	height: 338px;
+	object-fit: cover;
+}
 
+.close-popup {
+	position: absolute;
+	z-index: 50;
+	width: 740px;
+	font-size: 2em;
+	text-align: right;
+	padding-right: 10px;
+}
+.close-popup > a {
+	background: none;
+}
+i:hover {
+	color: rgba(0, 0, 0);
+	background: none;
+}
+.popup-imgLink {
+	position: relative;
+	z-index: 40;
+	height: 50px;
+	width: 50px;
+}
+
+.popup-imgLink:hover {
+	text-decoration: none;
+}
+
+#github-link {
+	top: -115px;
+	left: -43px;
+}
+
+#world-link {
+	top: -60px;
+	left: 10px;
+}
+.popup__link:hover {
+	background: none;
+}
+
+.popup__description {
+	width: 493px;
+	height: 100px;
+	background: var(--letters);
+	position: relative;
+	top: -80px;
+}

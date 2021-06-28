@@ -7,6 +7,9 @@
 	<meta charset="utf-8">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<?/php require 'debug'; ?>
+
 </head>
 <body>
 <header>
@@ -25,106 +28,96 @@
 		<img src="#">
 	</div>
 
-<div class="content">
-	<div class="container">
-		<h2 id="Skills">I'm good in</h2>
-		<div class="skills">
-			<div class="skills_slot">
-				<img id="img1" class="skills_slot_icon" src="Images/html.png">
-				<h3 id="h3-1">HTML5</h3> 
+	<div class="blur-filter">
+		<div class="container">
+			<h2 id="Skills">I'm good in</h2>
+			<div class="skills">
+				<div class="skills_slot">
+					<img id="img1" class="skills_slot_icon" src="Images/html.png" alt="HTML5-icon">
+					<h3 id="h3-1">HTML5</h3> 
+				</div>
+				<div class="skills_slot">
+					<img id="img2" class="skills_slot_icon" src="Images/css.png" alt="CSS3-icon">
+					<h3>CSS3</h3>
+				</div>
+				<div class="skills_slot">
+					<img id="img3"class="skills_slot_icon" src="Images/js.png" alt="Javascript-icon">
+					<h3>Javascript</h3>
+				</div>
+				<div class="skills_slot">
+					<img id="img4" class="skills_slot_icon" src="Images/mysql.png" alt="MySQL-icon">
+					<h3>MySQL</h3>
+				</div>
+				<div class="skills_slot">
+					<!--<img id="img5" class="skills_slot_icon" src="Images/php2.png" alt="PHP-icon">-->
+					<h3>PHP</h3>
+				</div>
+				<div class="skills_slot">
+					<img id="img6" class="skills_slot_icon" src="Images/wordpress.png" alt="WordPress-icon">
+						<h3 id="h3-2">WordPress</h3>
+				</div>
 			</div>
-			<div class="skills_slot">
-				<img id="img2" class="skills_slot_icon" src="Images/css.png">
-				<h3>CSS3</h3>
-			</div>
-			<div class="skills_slot">
-				<img id="img3"class="skills_slot_icon" src="Images/js.png">
-				<h3>Javascript</h3>
-			</div>
-			<div class="skills_slot">
-				<img id="img4" class="skills_slot_icon" src="Images/mysql.png">
-				<h3>MySQL</h3>
-			</div>
-			<div class="skills_slot">
-				<!--<img id="img5" class="skills_slot_icon" src="Images/php2.png">-->
-				<h3>PHP</h3>
-			</div>
-			<div class="skills_slot">
-				<img id="img6" class="skills_slot_icon" src="Images/wordpress.png">
-				<h3 id="h3-2">WordPress</h3>
-			</div>
-		</div>
-	</div>	
-	<br>
-	<br>
-	<br>
-	<br>
-	
+		</div>	
+		<h1 id="Portfolio">Portfolio</h1>
+		<div class="portfolio">
+				<div class="portfolio-item">
+					<h3>Title</h3>
+					<img src="Images/thumb-1920-649533.png" alt="#">
+					<div class="portfolio__item-viewMore" id="portfolio__item-viewMore">
+							<p>View more</p>
+					</div>
+					<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </blockquote>
+					<p><em>Person - Ocupation</em></p>
+					<div class="portfolio-item-gradient"></div>
+				</div>
 
-	<h1 id="Portfolio">Portfolio</h1>
-	<div class="portfolio">
-			<div class="portfolio-item">
-				<h3>Title</h3>
-				<img src="#">
-				<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</blockquote>
-				<div></div>
-			</div>
-			<!--<div class="grid-item">
-				<img src="#">
-				<h3></h3>
-				<div>inline</div>
-			</div>
-			<div class="grid-item">
-				<img src="#">
-				<h3></h3>
-				<div>inline</div>
-			</div>
-			<div class="grid-item">
-				<img src="#">
-				<h3></h3>
-				<div>inline</div>
-			</div>
-			<div class="grid-item">
-				<img src="#">
-				<h3></h3>
-				<div>inline</div>
-			</div>
-			<div class="grid-item">
-				<img src="#">
-				<h3></h3>
-				<div>inline</div>
-			</div>-->
-	</div>
+		</div>
 
-	<h2 id="Contact">Contact</h2>
-	<form>
-		<div class="form-input">
-			<input type="email" name="email" placeholder="Write your email" required="true">
-		</div>
-		<div class="form-input">
-			<input type="text" name="asunto" placeholder="Write the subject" required="true">
-		</div>
-		<div class="form-input">
-			<input type="text" name="message" placeholder="Write your message" required="true">
-		</div>
-		<div class="form-input">
-			<input type="submit">
-		</div>
-	</form>
-
-	<div class="grid-conteiner">
+		<h2 id="Contact">Contact</h2>
+		<form>
+			<div class="form-input">
+				<input type="email" name="email" placeholder="Write your email" required="true">
+			</div>
+			<div class="form-input">
+				<input type="text" name="asunto" placeholder="Write the subject" required="true">
+			</div>
+			<div class="form-input">
+				<input type="text" name="message" placeholder="Write your message" required="true">
+			</div>
+			<div class="form-input">	
+				<input type="submit" value="Send!">
+			</div>
+		</form>
+		<div class="grid-conteiner">
+				<a href="https://www.linkedin.com/in/julio-salas-b10605200/">
+					<img src="#" alt="linkedin-icon">
+					<h3>LinkedIn</h3>
+				</a>
+				<a href="https://github.com/Js-codetalker">
+					<img src="#" alt="Github-icon">
+					<h3>Github</h3>
+				</a>
 			<a href="https://www.linkedin.com/in/julio-salas-b10605200/">
-				<img src="#">
-				<h3>LinkedIn</h3>
-			</a>
-			<a href="https://github.com/Js-codetalker">
-				<img src="#">
-				<h3>Github</h3>
-			</a>
-			<a href="https://www.linkedin.com/in/julio-salas-b10605200/">
-				<img src="#">
+				<img src="#" alt="#">
 				<h3>Title</h3>
 			</a>
+		</div>
 </div>
+	<!--Popup-->
+	<div class="overlay" id="overlay">
+		<div class="popup" id="popup">
+			<div class="close-popup"><a href="" id="close-popup"><i class="fas fa-times"></i></a></div><!--Boton de cierre	-->
+			<img class="popup-mainImg" src="Images/thumb-1920-649533.png">
+			<a href="#" class="popup__link"><img id="world-link" src="Images/world.png" class="popup-imgLink"></a>
+			<a href="#" class="popup__link"><img id="github-link" src="Images/github.png" class="popup-imgLink"></a>
+			<p class="popup__description"></p>
+			<div class="popup__skillContainer">
+				<img src="">
+				<img src="">
+				<img src="">
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
