@@ -9,20 +9,24 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"    ></script>
 	<?//php require 'debug'; ?>
 
 </head>
 <body>
 <header>
-	<div class="responsiveMenu">
-		<img id="responsiveMenu__button" src="Images/burgerMenu.jpg">
-	</div>
-	<nav id="navSection" class="closed">
-		<a href="#About" id="link1"><p>About</p><div class="gradient"></div></a>
-		<a href="#Portfolio" id="link2"><p>Portfolio</p><div class="gradient"></div></a>
-		<a href="#Contact" id="link3"><p>Contact</p><div class="gradient"></div></a>
+	<nav class="nav">
+		<button class="nav__toggleButton">
+			<i class="fas fa-bars"></i>
+		</button>
+		<ul class="nav__menu toggle">
+			<li class="nav__menu-item"><a class="nav__menu-item-link" href="#About" id="link1">About</a><div class="nav__menu-item-link-gradient"></div></li>
+			<li class="nav__menu-item"><a class="nav__menu-item-link" href="#Portfolio" id="link2">Portfolio</a><div class="nav__menu-item-link-gradient"></div></li>
+			<li class="nav__menu-item"><a class="nav__menu-item-link" href="#Contact" id="link3">Contact</a><div class="nav__menu-item-link-gradient"></div></li>
+		</ul>
 	</nav>
 </header>
+	
 	<div class="blur-filter">
 		<div class="about">
 			<h2 id="About" class="about__title"><strong>Hi!</strong> I'm Julio Salas</h2>
@@ -32,15 +36,14 @@
 				<br>
 				<p class="about__paragraph">But of course, you want proofs rather than words, so keep scrolling and <strong>see 	what I can do for you.</strong></p>
 		</div>
-
 		<h1 id="Portfolio">Portfolio</h1>
 		<div class="portfolio">
 				<div class="portfolio-item">
-					<h3>Title</h3>
-					<img src="Images/thumb-1920-649533.png" alt="#">
+					<h3>Example pizzeria</h3>
+					<a href="#" target="blank"><img src="Images/world.png" class="portfolio-imgLink"></a>
+					<img class="portfolio__workImg" src="Images/Captura de pantalla (303).png" alt="#">
 					<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </blockquote>
 					<div class="portfolio__item-container">
-						<p class="portfolio__item-container-viewMore" id="portfolio__item-viewMore">View more</p>
 						<p class="portfolio__item-container-client"><em>Person - Ocupation</em></p> 	
 					</div>
 					<div class="portfolio-item-gradient"></div>
@@ -74,10 +77,10 @@
 				</a>
 		</div>
 </div>
-	<!--Popup-->
+	<!--
 	<div class="overlay" id="overlay">
 		<div class="popup" id="popup">
-			<div class="close-popup"><a href="" id="close-popup"><i class="fas fa-times"></i></a></div><!--Boton de cierre	-->
+			<div class="close-popup"><a href="" id="close-popup"><i class="fas fa-times"></i></a></div> Boton de cierre
 			<img class="popup-mainImg" src="Images/thumb-1920-649533.png">
 			<a href="#" class="popup__link"><img id="world-link" src="Images/world.png" class="popup-imgLink"></a>
 			<a href="#" class="popup__link"><img id="github-link" src="Images/github.png" class="popup-imgLink"></a>
@@ -88,7 +91,7 @@
 				<img src="">
 			</div>
 		</div>
-	</div>
+	</div>Popup-->
 <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
