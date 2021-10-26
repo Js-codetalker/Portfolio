@@ -1,12 +1,14 @@
 import NextLink, { LinkProps as NextLinkProps } from "next/link";
 interface LinkProps extends NextLinkProps {
   isExternal?: boolean;
+  className?: string;
 }
 
 const Link: React.FC<LinkProps> = ({
   href,
   isExternal = false,
   children,
+  className,
   ...props
 }) => {
   return isExternal ? (
