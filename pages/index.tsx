@@ -1,6 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Link, Container } from "@components/ui";
+import { Link, Container, Image } from "@components/ui";
 
 export default function Home() {
   return (
@@ -26,10 +25,10 @@ export default function Home() {
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
 
-            <Link isExternal={true} href="https://nextjs.org/learn">
-              <h2>Learn &rarr;</h2>
-              <p>Learn about Next.js in an interactive course with quizzes!</p>
-            </Link>
+          <Link isExternal={true} href="https://nextjs.org/learn">
+            <h2>Learn &rarr;</h2>
+            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          </Link>
 
           <a href="https://github.com/vercel/next.js/tree/master/examples">
             <h2>Examples &rarr;</h2>
@@ -52,9 +51,15 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{" "}
-          <span>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
+          <div className="block w-full relative">
+            <Image
+              ObjFit="contain"
+              src="/vercel.svg"
+              alt="Vercel Logo"
+              height={75}
+              width={100}
+            />
+          </div>
         </a>
       </footer>
     </Container>
