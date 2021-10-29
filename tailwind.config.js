@@ -6,6 +6,7 @@ module.exports = {
       20: "20px",
       60: "60px",
       1280: "1280px",
+      'full': '100%'
     },
     maxWidth: (theme) => theme("spacing"),
     extend: {},
