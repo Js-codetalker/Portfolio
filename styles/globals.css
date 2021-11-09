@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat/Montserrat-Light.ttf");
+  font-style: normal;
+  font-weight: 300;
+}
+
 html,
 body {
   padding: 0;
@@ -16,5 +23,5 @@ a {
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box
 }
