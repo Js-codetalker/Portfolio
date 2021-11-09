@@ -30,8 +30,6 @@ const Image: React.FC<ImageProps> = ({
         objectFit={ObjFit}
         src={src}
         alt={alt}
-        height={height}
-        width={width}
         layout="fill"
       />
     </div>
