@@ -6,11 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate:contentful": "contentful-typescript-codegen --output @types/contentful/contentful.d.ts"
   },
   "dependencies": {
     "@types/react": "^17.0.32",
     "contentful": "^9.1.4",
+    "contentful-management": "^7.45.0",
+    "contentful-typescript-codegen": "^3.2.3",
     "dotenv": "^10.0.0",
     "moment": "^2.29.1",
     "next": "11.1.2",
