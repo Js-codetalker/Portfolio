@@ -39,7 +39,7 @@ export interface IPageFields {
   slug: string;
 
   /** Blocks */
-  blocks?: Entry<{ [fieldId: string]: unknown }>[] | undefined;
+  blocks?: IPortfolioProyectsList[] | undefined;
 }
 
 export interface IPage extends Entry<IPageFields> {
@@ -59,7 +59,78 @@ export interface IPage extends Entry<IPageFields> {
   };
 }
 
-export type CONTENT_TYPE = "navLink" | "page";
+export interface IPortfolioProjectsListFields {
+  /** Title */
+  title?: string | undefined;
+
+  /** Projects */
+  projects?: IPortfolioProyectsListProyect[] | undefined;
+}
+
+export interface IPortfolioProjectsList
+  extends Entry<IPortfolioProjectsListFields> {
+  sys: {
+    id: string;
+    type: string;
+    createdAt: string;
+    updatedAt: string;
+    locale: string;
+    contentType: {
+      sys: {
+        id: "portfolioProjectsList";
+        linkType: "ContentType";
+        type: "Link";
+      };
+    };
+  };
+}
+
+export interface IPortfolioProjectsListProjectFields {
+  /** Title */
+  title?: string | undefined;
+
+  /** Description */
+  description?: string | undefined;
+
+  /** Technologies */
+  technologies?: Asset[] | undefined;
+
+  /** Images */
+  images?: Asset[] | undefined;
+
+  /** Video */
+  video?: Asset | undefined;
+
+  /** Preview Link */
+  previewLink?: string | undefined;
+
+  /** Github Link */
+  githubLink?: string | undefined;
+}
+
+export interface IPortfolioProjectsListProject
+  extends Entry<IPortfolioProjectsListProjectFields> {
+  sys: {
+    id: string;
+    type: string;
+    createdAt: string;
+    updatedAt: string;
+    locale: string;
+    contentType: {
+      sys: {
+        id: "portfolioProjectsListProject";
+        linkType: "ContentType";
+        type: "Link";
+      };
+    };
+  };
+}
+
+export type CONTENT_TYPE =
+  | "navLink"
+  | "page"
+  | "portfolioProjectsList"
+  | "portfolioProjectsListProject";
 
 export type LOCALE_CODE = "en-US";
 
