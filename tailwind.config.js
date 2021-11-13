@@ -8,15 +8,22 @@ module.exports = {
       20: "20px",
       40: "40px",
       60: "60px",
+      240: "240px",
+      300: "300px",
       1280: "1280px",
       full: "100%",
     },
     maxWidth: (theme) => theme("spacing"),
-    extend: {},
+    extend: {
+      backgroundColor: {
+        overlay: 'rgba(0,0,0,.8)'
+      }
+    }
   },
   variants: {
     extend: {
       backgroundColor: ['dark'],
+      opacity: ['group-hover']
     },
   },
   plugins: [],

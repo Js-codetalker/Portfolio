@@ -7,7 +7,9 @@ export const AppContextProvider: React.FC = ({ children }) => {
   const toggleDarkMode = () => setDarkMode((prev) => !prev);
 
   useEffect(() => {
-    setDarkMode((prev) => JSON.parse(localStorage.getItem("darkMode") as string) ?? prev);
+    setDarkMode(
+      (prev) => JSON.parse(localStorage.getItem("darkMode") as string) ?? prev
+    );
   }, []);
 
   useEffect(

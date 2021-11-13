@@ -8,6 +8,14 @@
   font-style: normal;
   font-weight: 300;
 }
+@layer utilities {
+  .flex-center {
+    @apply justify-center items-center;
+  }
+  .cover-screen {
+    @apply absolute top-0 bottom-0 left-0 right-0;
+  }
+}
 html,
 body {
   padding: 0;
@@ -22,5 +30,5 @@ a {
 }
 
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
 }

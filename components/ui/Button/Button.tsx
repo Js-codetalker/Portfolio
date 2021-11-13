@@ -5,7 +5,7 @@ interface ButtonProps {
   Component?: "button" | "a";
   children?: ReactNode;
   url?: string;
-  onClick: any;
+  onClick?: any;
 }
 const Button: React.FC<ButtonProps> = ({
   Component = "button",
