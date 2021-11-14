@@ -33,13 +33,13 @@ export interface INavLink extends Entry<INavLinkFields> {
 
 export interface IPageFields {
   /** Title */
-  title?: string | undefined;
+  title: string;
 
   /** Slug */
   slug: string;
 
   /** Blocks */
-  blocks?: IPortfolioProyectsList[] | undefined;
+  blocks: IPortfolioProjectsList[];
 }
 
 export interface IPage extends Entry<IPageFields> {
@@ -64,7 +64,7 @@ export interface IPortfolioProjectsListFields {
   title?: string | undefined;
 
   /** Projects */
-  projects?: IPortfolioProyectsListProyect[] | undefined;
+  projects?: IPortfolioProjectsListProject[] | undefined;
 }
 
 export interface IPortfolioProjectsList
@@ -106,6 +106,9 @@ export interface IPortfolioProjectsListProjectFields {
 
   /** Github Link */
   githubLink?: string | undefined;
+
+  /** Button Text */
+  buttonText?: string | undefined;
 }
 
 export interface IPortfolioProjectsListProject

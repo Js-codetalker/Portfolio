@@ -1,6 +1,6 @@
 module.exports = {
   purge: [],
-  darkMode: 'class',
+  darkMode: "class",
   theme: {
     spacing: {
       0: "0px",
@@ -10,20 +10,25 @@ module.exports = {
       60: "60px",
       240: "240px",
       300: "300px",
+      750: "750px",
       1280: "1280px",
       full: "100%",
     },
     maxWidth: (theme) => theme("spacing"),
+    minWidth: (theme) => theme("spacing"),
+    stroke: (theme) => theme("colors"),
     extend: {
       backgroundColor: {
-        overlay: 'rgba(0,0,0,.8)'
-      }
-    }
+        overlay: "rgba(0,0,0,.8)",
+      },
+      inset: {
+        "-50": "-50px",
+      },
+    },
   },
   variants: {
     extend: {
-      backgroundColor: ['dark'],
-      opacity: ['group-hover']
+      backgroundColor: ["dark"],
     },
   },
   plugins: [],

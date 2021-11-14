@@ -10,6 +10,7 @@ interface ImageProps {
   width?: number;
   height?: number;
   layout?: "fixed" | "intrinsic" | "fill" | "responsive";
+  isExternal?: boolean
 }
 const Image: React.FC<ImageProps> = ({
   src,
@@ -19,25 +20,24 @@ const Image: React.FC<ImageProps> = ({
   useRatio = true,
   ObjFit = "cover",
   containerClassName = "",
+  isExternal = true,
   ...rest
 }) => {
   const { width, height } = rest;
-  const ratio = !!height && !!width && (height * 100) / width;
+  const url = isExternal ? `https:${src}` : src
   return useRatio ? (
-    <div className={`relative w-full ${containerClassName}`} style={{ paddingTop: `${ratio}%` }}>
       <NextImage
-        className={`${className} w-full h-full`}
         objectFit={ObjFit}
-        src={src}
+        src={url}
         alt={alt}
         layout="fill"
+        className={className}
       />
-    </div>
   ) : (
     <NextImage
       className={className}
       objectFit={ObjFit}
-      src={src}
+      src={url}
       alt={alt}
       height={height}
       width={width}

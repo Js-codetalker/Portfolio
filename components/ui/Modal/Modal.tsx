@@ -1,9 +1,12 @@
 import { Modal as MantineModal } from "@mantine/core";
 import { useState } from "react";
+import { Times } from "..";
+import { AppContext } from "@components/common";
 interface ModalProps {
-  className?: string;
+  bodyClasses?: string;
+  modalClasses?: string;
   centerOnScreen?: boolean;
-  modalWidth?: number
+  modalWidth?: number;
 }
 const useModal = () => {
   const [isOpened, setIsOpened] = useState(false);
@@ -12,24 +15,35 @@ const useModal = () => {
   };
   const Modal: React.FC<ModalProps> = ({
     children,
-    className,
+    bodyClasses,
+    modalClasses,
     centerOnScreen = true,
-    modalWidth = 'full',
+    modalWidth = "full",
   }) => {
     return (
-      <MantineModal
-        opened={isOpened}
-        onClose={toggleModal}
-        hideCloseButton
-        classNames={{
-          modal: 'p-0',
-          root: `w-${modalWidth}`,
-          inner: centerOnScreen ? "flex-center" : "",
-          body: `relative w-full ${className} m-0`,
-        }}
-      >
-        {children}
-      </MantineModal>
+      <AppContext.Consumer>
+        {({ darkMode }) => (
+          <MantineModal
+            opened={isOpened}
+            onClose={toggleModal}
+            hideCloseButton
+            classNames={{
+              modal: `w-${modalWidth} rounded-none p-0 ${modalClasses}`,
+              inner: centerOnScreen ? "flex-center" : "",
+              body: `relative w-full m-0 dark:bg-black dark:text-white ${bodyClasses}`,
+              root: darkMode ? "dark" : "",
+            }}
+          >
+            <button
+              className="absolute -top-50 right-0 w-40 h-40 z-50"
+              onClick={toggleModal}
+            >
+              <Times className="stroke-white" />
+            </button>
+            {children}
+          </MantineModal>
+        )}
+      </AppContext.Consumer>
     );
   };
   return {
