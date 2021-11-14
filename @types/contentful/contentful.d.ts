@@ -96,7 +96,7 @@ export interface IPortfolioProjectsListProjectFields {
   technologies?: Asset[] | undefined;
 
   /** Images */
-  images?: Asset[] | undefined;
+  images: Asset[];
 
   /** Video */
   video?: Asset | undefined;

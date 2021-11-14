@@ -1,5 +1,5 @@
 import { Modal as MantineModal } from "@mantine/core";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Times } from "..";
 import { AppContext } from "@components/common";
 interface ModalProps {
@@ -8,7 +8,7 @@ interface ModalProps {
   centerOnScreen?: boolean;
   modalWidth?: number;
 }
-const useModal = () => {
+const useModal = (): [() => void, React.FC<ModalProps>] => {
   const [isOpened, setIsOpened] = useState(false);
   const toggleModal = () => {
     setIsOpened((prev) => !prev);
@@ -46,10 +46,7 @@ const useModal = () => {
       </AppContext.Consumer>
     );
   };
-  return {
-    toggleModal,
-    Modal,
-  };
+  return [toggleModal, Modal];
 };
 
 export default useModal;
