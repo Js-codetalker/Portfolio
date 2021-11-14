@@ -1,6 +1,6 @@
 import { Modal as MantineModal } from "@mantine/core";
 import React, { useState } from "react";
-import { Times } from "..";
+import { Close } from "..";
 import { AppContext } from "@components/common";
 interface ModalProps {
   bodyClasses?: string;
@@ -38,7 +38,7 @@ const useModal = (): [() => void, React.FC<ModalProps>] => {
               className="absolute -top-50 right-0 w-40 h-40 z-50"
               onClick={toggleModal}
             >
-              <Times className="stroke-white" />
+              <Close className="stroke-white" />
             </button>
             {children}
           </MantineModal>

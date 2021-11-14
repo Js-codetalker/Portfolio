@@ -92,9 +92,6 @@ export interface IPortfolioProjectsListProjectFields {
   /** Description */
   description?: string | undefined;
 
-  /** Technologies */
-  technologies?: Asset[] | undefined;
-
   /** Images */
   images: Asset[];
 
@@ -109,6 +106,9 @@ export interface IPortfolioProjectsListProjectFields {
 
   /** Button Text */
   buttonText?: string | undefined;
+
+  /** Technologies */
+  technologies: ("tailwindcss" | "next.js" | "sass" | "react.js")[];
 }
 
 export interface IPortfolioProjectsListProject

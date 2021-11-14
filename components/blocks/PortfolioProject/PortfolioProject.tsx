@@ -1,7 +1,6 @@
 import { IPortfolioProjectsListProjectFields } from "@cms/types";
 import { Image } from "@components/ui";
 import { usePortfolioModal } from "..";
-import { useEffect, useRef } from "react";
 import css from "./PortfolioProject.module.scss";
 
 interface PortfolioProjectProps {
@@ -42,7 +41,7 @@ const PortfolioProject: React.FC<PortfolioProjectProps> = ({ data }) => {
           </div>
         </div>
       </li>
-      <ProjectModal assets={assets} />
+      <ProjectModal technologies={technologies} assets={assets} />
     </>
   );
 };

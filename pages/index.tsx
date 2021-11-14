@@ -4,6 +4,7 @@ import { Blocks } from "@components/blocks";
 import { IPageFields } from "@cms/types";
 import { Button } from "@components/ui";
 import { AppContext } from "@components/common";
+import { Tailwind } from "@components/ui";
 
 export const getStaticProps = async () => {
   const page = await getPage("/");
@@ -23,7 +24,7 @@ export default function Home({ page }) {
           <Button onClick={toggleDarkMode}>Click me</Button>
         )}
       </AppContext.Consumer>
-
+          <Tailwind/>
       <Blocks blocks={blocks} />
     </PageContainer>
   );
