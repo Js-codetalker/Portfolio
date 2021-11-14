@@ -35,13 +35,18 @@ const PortfolioProject: React.FC<PortfolioProjectProps> = ({ data }) => {
             />
           )}
           <div className={css.info}>
-            <button onClick={toggleModal}>
-              {buttonText}
-            </button>
+            <h4 className="">{title}</h4>
+            <button onClick={toggleModal}>{buttonText}</button>
           </div>
         </div>
       </li>
-      <ProjectModal technologies={technologies} assets={assets} />
+      <ProjectModal
+        githubLink={githubLink}
+        previewLink={previewLink}
+        technologies={technologies}
+        assets={assets}
+        description={description}
+      />
     </>
   );
 };

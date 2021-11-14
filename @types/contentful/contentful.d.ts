@@ -87,10 +87,10 @@ export interface IPortfolioProjectsList
 
 export interface IPortfolioProjectsListProjectFields {
   /** Title */
-  title?: string | undefined;
+  title: string;
 
   /** Description */
-  description?: string | undefined;
+  description: string;
 
   /** Images */
   images: Asset[];

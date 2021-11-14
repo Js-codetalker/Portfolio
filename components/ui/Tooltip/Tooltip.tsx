@@ -3,9 +3,10 @@ import React, { useState } from "react";
 interface ToolTipProps {
   label: string;
 }
-const useTooltip = (): [() => void, React.FC<ToolTipProps>] => {
+const useTooltip = (): [() => void, () => void, React.FC<ToolTipProps>] => {
   const [isOpen, setIsOpen] = useState(false);
-  const toggleTooltip = () => setIsOpen((prev) => !prev);
+  const closeTooltip = () => setIsOpen(false)
+  const openTooltip = () => setIsOpen(true)
   const ToolTip: React.FC<ToolTipProps> = ({ label, children }) => {
     return (
       <MantineTooltip
@@ -26,7 +27,7 @@ const useTooltip = (): [() => void, React.FC<ToolTipProps>] => {
       </MantineTooltip>
     );
   };
-  return [toggleTooltip, ToolTip];
+  return [openTooltip, closeTooltip, ToolTip];
 };
 
 export default useTooltip;

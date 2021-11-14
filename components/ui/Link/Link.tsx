@@ -12,12 +12,12 @@ const Link: React.FC<LinkProps> = ({
   ...props
 }) => {
   return isExternal ? (
-    <a target="_blank" rel="noreferrer" href={href as string} {...props}>
+    <a className={className} target="_blank" rel="noreferrer" href={href as string} {...props}>
       {children}
     </a>
   ) : (
     <NextLink href={href}>
-      <a {...props}>{children}</a>
+      <a className={className} {...props}>{children}</a>
     </NextLink>
   );
 };

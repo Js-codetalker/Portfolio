@@ -1,22 +1,31 @@
 import { ReactNode } from "react";
-import css from "./Button.module.scss";
+import { Link } from "..";
 
 interface ButtonProps {
   Component?: "button" | "a";
   children?: ReactNode;
+  className?: string
   url?: string;
+  external?: boolean;
   onClick?: any;
 }
 const Button: React.FC<ButtonProps> = ({
   Component = "button",
   children,
-  url,
+  url = "",
+  className = '',
+  external = false,
   onClick,
 }) => {
-  return (
-    <Component type="button" className={css.btn} href={url} onClick={onClick}>
+  const defaultClasses = "inline-block py-10 px-30 border-2"
+  return Component === "button" ? (
+    <button type="button" className={`${defaultClasses} ${className}`} onClick={onClick}>
       {children}
-    </Component>
+    </button>
+  ) : (
+    <Link href={url} className={`${defaultClasses} ${className}`} isExternal={external}>
+      {children}
+    </Link>
   );
 };
 
