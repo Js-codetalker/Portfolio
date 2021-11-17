@@ -58,9 +58,9 @@ const usePortfolioModal = (): [
           </Swiper>
           <div className="flex flex-center flex-col md:flex-row w-full bg-black">
             <div className="w-full max-w-450 p-20 h-full text-white">
-              <div className="flex gap-10 h-full flex-col flex-center">
-                <p className="text-center md:text-left">{description}</p>
-                <div className="flex py-10 flex-center gap-10">
+              <div className="flex gap-10 h-full flex-col flex-center md:flex-unset">
+                <p className="text-center md:text-justify">{description}</p>
+                <div className="flex py-10 gap-10">
                   {previewLink && (
                     <Button className="px-15 sm:px-40" external Component="a" url={previewLink}>
                       View Project
